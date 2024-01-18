@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ color: rgb(240, 114, 114);
+}
+
+
+.calculator{
+  padding: 20px;
+  border-radius: 10px;
+  background: #000428;
+}
+
+form input {
+  border: none;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(91, 91, 151);
+  margin: 2px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  
+}
+form input[type="text"]{
+  width: 300px;
+  color: rgb(16, 16, 16);
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px 25px 0px;
+  text-align: right;
+  flex: 1;
+  padding: 5px 10px;
+  background-color: rgb(251, 249, 249);
+  
+}
+
+form input[type="button"]{
+  background-color: white;
+  color: black;
+}
+form input[type="button"]:hover{
+  background-color:rgb(51, 142, 233);
+  color: rgb(244, 237, 237);
+}
+
+form input.equal{
+  width: 123px;
+  background-color:rgb(51, 233, 66);
+  color: rgb(244, 237, 237);
+  box-shadow: rgba(3, 3, 244, 0.25) 0px 30px 60px -12px inset, rgba(243, 6, 6, 0.3) 0px 18px 36px -18px inset;
+}
+
+form input.symbol{
+  background-color: #0692f6;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form input.AC{
+  background-color: red;
+  color: white;
+}
+form input.CE{
+  background-color: rgb(250, 234, 7);
+  color: rgb(61, 59, 59);
+}
+form input.dot{
+  background-color: rgb(247, 156, 0);
+  color: rgb(249, 246, 246);
+}
+.btn{
+  margin-left: 22px;
+  padding: 10px;
+  width: 256px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(60, 60, 60, 0.9) 0px 0px 0px 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
